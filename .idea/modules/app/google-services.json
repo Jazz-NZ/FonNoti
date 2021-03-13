@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "999764133984",
+    "firebase_url": "https://noti-fon.firebaseio.com",
+    "project_id": "noti-fon",
+    "storage_bucket": "noti-fon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999764133984:android:18cd1d64e4085e09ecdb05",
+        "android_client_info": {
+          "package_name": "com.example.fonnoti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "999764133984-cdnj6b7n0q7af54pq3fp3i7cja6qp8eu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fonnoti",
+            "certificate_hash": "c63392a31d660ba2418fc2a656d143e6265c7a01"
+          }
+        },
+        {
+          "client_id": "999764133984-cbf47cq0ked3v13mpojn1rhrqhe0dcfu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFUwm25ewYCJZsEsSfny8iShR5gXSjadg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "999764133984-cbf47cq0ked3v13mpojn1rhrqhe0dcfu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -12,6 +12,7 @@ public class PrvaGodinaActivity extends AppCompatActivity {
     SwitchCompat mataAktSw;
     SwitchCompat mata1Sw;
     SwitchCompat mata2Sw;
+    SwitchCompat oikt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,9 @@ public class PrvaGodinaActivity extends AppCompatActivity {
 
         mata2Sw = (SwitchCompat) findViewById(R.id.mata2Sw);
         swithHandler(mata2Sw, "mata2Save","matematika2");
+
+        oikt = (SwitchCompat) findViewById(R.id.oiktSw);
+        swithHandler(oikt, "oiktSave","oikt");
 
 
 

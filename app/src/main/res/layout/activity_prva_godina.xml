@@ -13,7 +13,7 @@
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/mataAktSw"
-            android:layout_width="wrap_content"
+            android:layout_width="140dp"
 
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -43,6 +43,19 @@
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
             android:text="Matematika 2"></androidx.appcompat.widget.SwitchCompat>
+
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/oiktSw"
+            android:layout_width="141dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="OIKT"></androidx.appcompat.widget.SwitchCompat>
+
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

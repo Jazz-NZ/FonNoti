@@ -24,6 +24,8 @@ import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
+import java.util.Random;
+
 
 /**
  * NOTE: There can only be one service in each app that receives FCM messages. If multiple
@@ -36,7 +38,11 @@ import com.google.firebase.messaging.RemoteMessage;
  *   <action android:name="com.google.firebase.MESSAGING_EVENT" />
  * </intent-filter>
  */
+
+
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
+
+    int i = 0;
 
     private static final String TAG = "MyFirebaseMsgService";
 
@@ -68,11 +74,12 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
             String predmet = remoteMessage.getData().get("predmet");
             String poruka  = remoteMessage.getData().get("poruka");
+            String link = remoteMessage.getData().get("link");
 
 
 
             String data = remoteMessage.getMessageId();
-            sendNotification(predmet,poruka);
+            sendNotification(predmet,poruka, link);
             if (/* Check if data needs to be processed by long running job */ true) {
                 // For long-running tasks (10 seconds or more) use WorkManager.
                 scheduleJob();
@@ -148,9 +155,10 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
      *
      * @param messageBody FCM message body received.
      */
-    private void sendNotification(String predmet, String poruka) {
+    private void sendNotification(String predmet, String poruka, String link) {
         Intent intent = new Intent(this, Browser.class); //treba podesiti i link
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.putExtra("link",link);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0 /* Request code */, intent,
                 PendingIntent.FLAG_ONE_SHOT);
 
@@ -174,10 +182,14 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
                     "Channel human readable title",
                     NotificationManager.IMPORTANCE_DEFAULT);
             notificationManager.createNotificationChannel(channel);
-        }
+
+            }
+//notificationManager.notify(Unique_Integer_Number, notification); //treba neki radnom broj da se generise da bi se ubacilo obavestenje. Moze iz datuma da se uzme dan+sat+minut+sekund
 
 
-
-        notificationManager.notify(0 /* ID of notification */, notificationBuilder.build());
+        Random random = new Random();
+        int m = random.nextInt(9999 - 1000) + 1000;
+        notificationManager.notify(m /* ID of notification */, notificationBuilder.build());
+      
     }
 }

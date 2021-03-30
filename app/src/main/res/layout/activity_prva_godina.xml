@@ -20,7 +20,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
-            android:text="Aktivnosti"></androidx.appcompat.widget.SwitchCompat>
+            android:text="@string/aktivnosti"></androidx.appcompat.widget.SwitchCompat>
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/mata1Sw"
@@ -33,17 +33,6 @@
             android:layout_marginBottom="10dp"
             android:text="Matematika 1"></androidx.appcompat.widget.SwitchCompat>
 
-        <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/mata2Sw"
-            android:layout_width="wrap_content"
-
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
-            android:text="Matematika 2"></androidx.appcompat.widget.SwitchCompat>
-
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/oiktSw"
@@ -55,6 +44,129 @@
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
             android:text="OIKT"></androidx.appcompat.widget.SwitchCompat>
+
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/ekonomijaSw"
+            android:layout_width="141dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="ekonomija"></androidx.appcompat.widget.SwitchCompat>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/menadzmentSw"
+            android:layout_width="141dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="menadzmet"></androidx.appcompat.widget.SwitchCompat>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/sociologijaSw"
+            android:layout_width="141dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="sociologija"></androidx.appcompat.widget.SwitchCompat>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/psihologijaSw"
+            android:layout_width="141dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="psihologija"></androidx.appcompat.widget.SwitchCompat>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/engleskiSw"
+            android:layout_width="141dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="engleski"></androidx.appcompat.widget.SwitchCompat>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/francuskiSw"
+            android:layout_width="141dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="francuski"></androidx.appcompat.widget.SwitchCompat>
+
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/mata2Sw"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Matematika 2"></androidx.appcompat.widget.SwitchCompat>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/programiranje1"
+            android:layout_width="141dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Programiranje 1"></androidx.appcompat.widget.SwitchCompat>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/osnoviogranizacijeSw"
+            android:layout_width="141dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Osnovi organizacije"></androidx.appcompat.widget.SwitchCompat>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/proizvodniSistemiSw"
+            android:layout_width="141dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Proizvodni sistemi"></androidx.appcompat.widget.SwitchCompat>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/uisSw"
+            android:layout_width="141dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Uvod u informacione sisteme"></androidx.appcompat.widget.SwitchCompat>
 
 
     </LinearLayout>

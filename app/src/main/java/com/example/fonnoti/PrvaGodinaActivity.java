@@ -13,6 +13,9 @@ public class PrvaGodinaActivity extends AppCompatActivity {
     SwitchCompat mata1Sw;
     SwitchCompat mata2Sw;
     SwitchCompat oikt;
+    SwitchCompat oo;
+    SwitchCompat p1;
+    SwitchCompat uis;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,19 @@ public class PrvaGodinaActivity extends AppCompatActivity {
 
         oikt = (SwitchCompat) findViewById(R.id.oiktSw);
         swithHandler(oikt, "oiktSave","oikt");
+
+        oo = (SwitchCompat) findViewById(R.id.osnoviogranizacijeSw);
+        swithHandler(oo, "ooSave","osnovi-organizacije");
+
+        p1 = (SwitchCompat) findViewById(R.id.programiranje1);
+        swithHandler(p1, "p1Save","programiranje-1");
+
+        uis = (SwitchCompat) findViewById(R.id.uisSw);
+        swithHandler(uis, "uisSave","uvod-u-informacione-sisteme");
+
+
+
+
 
 
 

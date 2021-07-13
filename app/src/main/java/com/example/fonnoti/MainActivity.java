@@ -7,22 +7,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.messaging.FirebaseMessaging;
-import com.google.firebase.messaging.FirebaseMessagingService;
 
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button button;
+    private Button prva;
+    private Button druga;
 
     private static final String TAG = "FirebaseMessagingSevise";
     @Override
@@ -66,13 +62,21 @@ public class MainActivity extends AppCompatActivity {
                 });
 
 
-            button = (Button) findViewById(R.id.prvaGodBtn);
-            button.setOnClickListener(new View.OnClickListener() {
+            prva = (Button) findViewById(R.id.prvaGodBtn);
+            prva.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     openPrvaGodina();
                 }
             });
+
+        druga = (Button) findViewById(R.id.drugaGodBtn);
+        druga.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openDrugaGodina();
+            }
+        });
 
 
     }
@@ -83,6 +87,12 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intentPrvaGodina = new Intent(this, PrvaGodinaActivity.class);
         startActivity(intentPrvaGodina);
+    }
+
+    public void openDrugaGodina(){
+
+        Intent intentDrugaGodina = new Intent(this, DrugaGodinaActivity.class);
+        startActivity(intentDrugaGodina);
     }
 
     public static void subToTopic(String topic){

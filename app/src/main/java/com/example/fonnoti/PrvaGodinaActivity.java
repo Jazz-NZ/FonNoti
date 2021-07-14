@@ -16,6 +16,16 @@ public class PrvaGodinaActivity extends AppCompatActivity {
     SwitchCompat oo;
     SwitchCompat p1;
     SwitchCompat uis;
+    SwitchCompat ekonomija;
+    SwitchCompat soc;
+    SwitchCompat psih;
+    SwitchCompat men;
+    SwitchCompat eng1;
+    SwitchCompat fra1;
+
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,13 +53,23 @@ public class PrvaGodinaActivity extends AppCompatActivity {
         uis = (SwitchCompat) findViewById(R.id.uisSw);
         swithHandler(uis, "uisSave","uvod-u-informacione-sisteme");
 
+        ekonomija = (SwitchCompat) findViewById(R.id.ekonomijaSw);
+        swithHandler(ekonomija, "ekoSave","ekonomija"); // odavde na dole
 
+        soc = (SwitchCompat) findViewById(R.id.sociologijaSw);
+        swithHandler(soc, "socSave","sociologija");
 
+        psih = (SwitchCompat) findViewById(R.id.psihologijaSw);
+        swithHandler(psih, "psihSave","psihologija");
 
+        eng1 = (SwitchCompat) findViewById(R.id.engleskiSw);
+        swithHandler(eng1, "eng1Save","engleski1");
 
+        fra1 = (SwitchCompat) findViewById(R.id.francuskiSw); // nema francuski za sada
+        swithHandler(fra1, "fra1Save","none");
 
-
-
+        men = (SwitchCompat) findViewById(R.id.menadzmentSw); // nema francuski za sada
+        swithHandler(men, "menSave","none");
 
 
         /*//sacuvati stanje za mata1 swith

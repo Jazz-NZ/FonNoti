@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button prva;
     private Button druga;
+    private Button treca;
 
     private static final String TAG = "FirebaseMessagingSevise";
     @Override
@@ -78,6 +79,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        treca = (Button) findViewById(R.id.trecaGodBtn);
+        treca.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openTrecaGodina();
+            }
+        });
 
     }
 
@@ -93,6 +101,12 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intentDrugaGodina = new Intent(this, DrugaGodinaActivity.class);
         startActivity(intentDrugaGodina);
+    }
+
+    public void openTrecaGodina(){
+
+        Intent intentTrecaGodina = new Intent(this, TrecaGodinaActivity.class);
+        startActivity(intentTrecaGodina);
     }
 
     public static void subToTopic(String topic){

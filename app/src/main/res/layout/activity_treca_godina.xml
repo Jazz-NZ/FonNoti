@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrecaGodinaActivity">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="47dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/rmtSw"
+                android:layout_width="140dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="RMT"></androidx.appcompat.widget.SwitchCompat>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/oi1Sw"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="OI1"></androidx.appcompat.widget.SwitchCompat>
+
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/tsSw"
+                android:layout_width="141dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Teorija sistema"></androidx.appcompat.widget.SwitchCompat>
+
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/mljrItSw"
+                android:layout_width="141dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="MLJR"></androidx.appcompat.widget.SwitchCompat>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/upSw"
+                android:layout_width="141dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="UP"></androidx.appcompat.widget.SwitchCompat>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/oi2Sw"
+                android:layout_width="141dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="OI 2"></androidx.appcompat.widget.SwitchCompat>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/bpSw"
+                android:layout_width="141dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Baze podatak"></androidx.appcompat.widget.SwitchCompat>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/pjSw"
+                android:layout_width="141dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Programski jezici"></androidx.appcompat.widget.SwitchCompat>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/mppSw"
+                android:layout_width="141dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="MPP"></androidx.appcompat.widget.SwitchCompat>
+
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/toSw"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="TO"></androidx.appcompat.widget.SwitchCompat>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/linsSw"
+                android:layout_width="141dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="LINS"></androidx.appcompat.widget.SwitchCompat>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/urSw"
+                android:layout_width="141dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Upravljacko racunovodstvo"></androidx.appcompat.widget.SwitchCompat>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/emSw"
+                android:layout_width="141dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Ekonometrijske metode"></androidx.appcompat.widget.SwitchCompat>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".DrugaGodinaActivity"></activity>
+        <activity android:name=".TrecaGodinaActivity"></activity>
+        <activity android:name=".DrugaGodinaActivity" />
         <activity android:name=".Browser" />
         <activity android:name=".PrvaGodinaActivity" />
         <activity android:name=".MainActivity">
